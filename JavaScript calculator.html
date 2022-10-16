@@ -1,0 +1,250 @@
+<html>
+    
+    <head>
+        
+        <h1>Calculator</h1>
+        
+    </head>
+    
+<body>
+
+
+  <div class="center">
+      
+    <input type="text" id="X">
+    <input type="text" id="Y">
+    <input type="text" id="Z">  
+<button type="button" onclick="addition()">+</button>
+<button type="button" onclick="subtraction()">-</button>
+<button type="button" onclick="division()">/</button>
+<button type="button" onclick="multiplication()">x</button>
+<button type="button" onclick="modulus()">%</button>
+
+<p id="result"></p>
+
+  </div>
+
+<script>
+letterDetect = "Letters detected try again";
+decimalDetect = "Decimals Detected try again";
+  
+function addition() {  
+   
+  let x = document.getElementById("X").value;
+   let y = document.getElementById("Y").value;
+   let z = document.getElementById("Z").value;
+  
+   let regexPattern = /^-?[0-9]+$/;
+    
+    // check if the passed number is integer or float
+    let resultX = regexPattern.test(x);
+    let resultY = regexPattern.test(y);
+    let resultZ = regexPattern.test(z);
+    
+    if(resultX) 
+    {
+        console.log(`${x} is an integer X.`);
+        let sumOfXandY = parseInt(x) + parseInt(y) + parseInt(z);
+   document.getElementById("result").innerHTML = sumOfXandY;
+    }
+    else 
+    {
+        console.log(`${x} is a float value X.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    if(resultY) 
+    {
+        console.log(`${y} is an integer Y.`);
+    }
+    else 
+    {
+        console.log(`${y} is a float value Y.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    if(resultZ) 
+    {
+        console.log(`${z} is an integer Z.`);
+    }
+    else 
+    {
+        console.log(`${z} is a float value Z.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    }
+
+ function subtraction() {
+  let x = document.getElementById("X").value;
+   let y = document.getElementById("Y").value;
+   let z = document.getElementById("Z").value;
+  
+   let regexPattern = /^-?[0-9]+$/;
+    
+    // check if the passed number is integer or float
+    let resultX = regexPattern.test(x);
+    let resultY = regexPattern.test(y);
+    let resultZ = regexPattern.test(z);
+    
+    if(resultX) 
+    {
+        console.log(`${x} is an integer X.`);
+        let sumOfXandY = parseInt(x) + parseInt(y) + parseInt(z);
+   document.getElementById("result").innerHTML = sumOfXandY;
+    }
+    else 
+    {
+        console.log(`${x} is a float value X.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    if(resultY) 
+    {
+        console.log(`${y} is an integer Y.`);
+    }
+    else 
+    {
+        console.log(`${y} is a float value Y.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    if(resultZ) 
+    {
+        console.log(`${z} is an integer Z.`);
+    }
+    else 
+    {
+        console.log(`${z} is a float value Z.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+
+}
+function multiplication() {
+  let x = document.getElementById("X").value;
+   let y = document.getElementById("Y").value;
+   let z = document.getElementById("Z").value;
+  
+   let regexPattern = /^-?[0-9]+$/;
+    
+    // check if the passed number is integer or float
+    let resultX = regexPattern.test(x);
+    let resultY = regexPattern.test(y);
+    let resultZ = regexPattern.test(z);
+    
+    if(resultX) 
+    {
+        console.log(`${x} is an integer X.`);
+        let sumOfXandY = parseInt(x) + parseInt(y) + parseInt(z);
+   document.getElementById("result").innerHTML = sumOfXandY;
+    }
+    else 
+    {
+        console.log(`${x} is a float value X.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    if(resultY) 
+    {
+        console.log(`${y} is an integer Y.`);
+    }
+    else 
+    {
+        console.log(`${y} is a float value Y.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    if(resultZ) 
+    {
+        console.log(`${z} is an integer Z.`);
+    }
+    else 
+    {
+        console.log(`${z} is a float value Z.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+}
+function division() {
+  let x = document.getElementById("X").value;
+   let y = document.getElementById("Y").value;
+   let z = document.getElementById("Z").value;
+  
+   let regexPattern = /^-?[0-9]+$/;
+    
+    // check if the passed number is integer or float
+    let resultX = regexPattern.test(x);
+    let resultY = regexPattern.test(y);
+    let resultZ = regexPattern.test(z);
+    
+    if(resultX) 
+    {
+        console.log(`${x} is an integer X.`);
+        let sumOfXandY = parseInt(x) + parseInt(y) + parseInt(z);
+   document.getElementById("result").innerHTML = sumOfXandY;
+    }
+    else 
+    {
+        console.log(`${x} is a float value X.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    if(resultY) 
+    {
+        console.log(`${y} is an integer Y.`);
+    }
+    else 
+    {
+        console.log(`${y} is a float value Y.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    if(resultZ) 
+    {
+        console.log(`${z} is an integer Z.`);
+    }
+    else 
+    {
+        console.log(`${z} is a float value Z.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+
+}
+function modulus() {
+  let x = document.getElementById("X").value;
+   let y = document.getElementById("Y").value;
+   let z = document.getElementById("Z").value;
+  
+   let regexPattern = /^-?[0-9]+$/;
+    
+    // check if the passed number is integer or float
+    let resultX = regexPattern.test(x);
+    let resultY = regexPattern.test(y);
+    let resultZ = regexPattern.test(z);
+    
+    if(resultX) 
+    {
+        console.log(`${x} is an integer X.`);
+        let sumOfXandY = parseInt(x) + parseInt(y) + parseInt(z);
+   document.getElementById("result").innerHTML = sumOfXandY;
+    }
+    else 
+    {
+        console.log(`${x} is a float value X.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    if(resultY) 
+    {
+        console.log(`${y} is an integer Y.`);
+    }
+    else 
+    {
+        console.log(`${y} is a float value Y.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+    if(resultZ) 
+    {
+        console.log(`${z} is an integer Z.`);
+    }
+    else 
+    {
+        console.log(`${z} is a float value Z.`)
+        document.getElementById("result").innerHTML = "Decimal detected pls try again!";
+    } 
+}
+    
+</script>
+  
+</body>
+
+</html>
